@@ -2,3 +2,20 @@
 <p>
   The time is now: <%= Time.now %>
 </p>
+
+
+<div id="my-element">
+
+</div>
+
+<script type="text/javascript">
+  window.reflect = {
+    // Replace this with an element on your page.
+    element: document.getElementById('my-element'),
+    // Replace this with an API token.
+    tokens: '<%=ENV['TWILIO_ACCOUNT_SID']%>',
+    project: 'test2',
+    view: 'test2'
+  };
+</script>
+<script type="text/javascript" src="//cdn.reflect.io/embed.js"></script>
